@@ -10,10 +10,16 @@ from email.mime.text import MIMEText
 host_address = "svjadhav1818@gmail.com"
 host_pass = "96618291#@havshya"
 guest_address = "svjadhav7799@gmail.com"
-subject = "Regarding failure of main.py"
-content = '''Hello, 
-				Developer this is an email regarding to your last commit. It seems that your main_pro.py file is not working properly please check it once and recommit.
-			THANK YOU'''
+subject = "Regarding failure of main_pro.py"
+content = """\<html>
+  <head></head>
+  <body>
+    <p style="color: red;">Hello, 
+		Developer this is an email regarding to your last commit. It seems that your main_pro.py file is not working properly please check it once and recommit.
+			THANK YOU</p>
+  </body>
+</html>"""
+
 message = MIMEMultipart()
 message['From'] = host_address
 message['To'] = guest_address
