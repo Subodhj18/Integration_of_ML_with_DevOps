@@ -91,9 +91,9 @@ f = open("accuracy.txt","w+")
 f.write(str(accuracy_train_model))
 f.close()
 os.system("mv /accuracy.txt /MYCODE")
-display_matter = open('accuracy_display.html','r+')
+display_matter = open('accuracy_display.html','w+')
 display_matter.write('<pre>\n---------------------------------------------\n')
-display_matter.write('\nAccuracy achieved : ' + accuracy_train_model+'\n</pre>')
+display_matter.write('\nAccuracy achieved : ' + str(accuracy_train_model)+'\n</pre>')
 display_matter.close()
 
 
