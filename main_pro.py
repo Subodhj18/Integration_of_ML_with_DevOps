@@ -86,7 +86,7 @@ def model_train(epoch,n):
 
 no_epoch=1
 no_layer=1
- accuracy_train_model=model_train(no_epoch,no_layer)
+accuracy_train_model=model_train(no_epoch,no_layer)
 
 # scores = model.int(evaluate(x_test, y_test, verbose=1))
 # print('Test loss:', scores[0])
