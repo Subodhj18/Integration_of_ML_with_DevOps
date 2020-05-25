@@ -74,10 +74,10 @@ def model_train(epoch,n):
               epochs=epochs,
               verbose=1,
               validation_data=(x_test, y_test))
-    score = model.evaluate(x_test, y_test, verbose=0)
-    a=score*100
+#     score = model.evaluate(x_test, y_test, verbose=0)
+#     a=score*100
     model.save("MY_MNIST_MODEL.h5")
-    os.system("mv /MNIST.h5 /MYCODE")
+    os.system("mv /MY_MNIST_MODEL.h5 /MYCODE")
     return a
 
 
@@ -86,10 +86,20 @@ def model_train(epoch,n):
 
 no_epoch=1
 no_layer=1
-accuracy_train_model=model_train(no_epoch,no_layer)
-f = open("accuracy.txt","w+")
-f.write(str(accuracy_train_model))
-f.close()
+# accuracy_train_model=model_train(no_epoch,no_layer)
+
+scores = model.evaluate(x_test, y_test, verbose=1)
+print('Test loss:', scores[0])
+print('Test accuracy:', scores[1])
+
+# accuracy_file = open('accuracy.txt','w')
+#f = open("accuracy.txt","w+")
+accuracy_file.write(str(scores[1]))
+accuracy_file.close()
+
+
+# f.write(str(accuracy_train_model))
+# f.close()
 os.system("mv /accuracy.txt /MYCODE")
 display_matter = open('accuracy_display.html','w+')
 display_matter.write('<pre>\n---------------------------------------------\n')
