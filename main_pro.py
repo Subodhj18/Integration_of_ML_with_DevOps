@@ -74,8 +74,8 @@ def model_train(epoch,n):
               epochs=epochs,
               verbose=1,
               validation_data=(x_test, y_test))
-#     score = model.evaluate(x_test, y_test, verbose=0)
-#     a=score*100
+    score = model.evaluate(x_test, y_test, verbose=0)
+    a=score*100
     model.save("MY_MNIST_MODEL.h5")
     os.system("mv /MY_MNIST_MODEL.h5 /MYCODE")
     return a
