@@ -18,7 +18,7 @@ import numpy
 import os
 
 
-model = "global"
+
 def model_train(epoch,n):
     batch_size = 32
     num_classes = 10
@@ -86,20 +86,20 @@ def model_train(epoch,n):
 
 no_epoch=1
 no_layer=1
-# accuracy_train_model=model_train(no_epoch,no_layer)
+ accuracy_train_model=model_train(no_epoch,no_layer)
 
-scores = model.int(evaluate(x_test, y_test, verbose=1))
-print('Test loss:', scores[0])
-print('Test accuracy:', scores[1])
+# scores = model.int(evaluate(x_test, y_test, verbose=1))
+# print('Test loss:', scores[0])
+# print('Test accuracy:', scores[1])
 
 # accuracy_file = open('accuracy.txt','w')
-#f = open("accuracy.txt","w+")
-accuracy_file.write(str(scores[1]))
-accuracy_file.close()
+f = open("accuracy.txt","w+")
+# accuracy_file.write(str(scores[1]))
+# accuracy_file.close()
 
 
-# f.write(str(accuracy_train_model))
-# f.close()
+f.write(str(accuracy_train_model[-1]))
+f.close()
 os.system("mv /accuracy.txt /MYCODE")
 display_matter = open('accuracy_display.html','w+')
 display_matter.write('<pre>\n---------------------------------------------\n')
