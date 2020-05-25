@@ -18,7 +18,7 @@ import numpy
 import os
 
 
-
+model = "global"
 def model_train(epoch,n):
     batch_size = 32
     num_classes = 10
