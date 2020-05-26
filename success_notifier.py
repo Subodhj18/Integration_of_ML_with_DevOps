@@ -11,8 +11,9 @@ from email.mime.text import MIMEText
 host_address = "svjadhav1818@gmail.com"
 host_pass = "96618291#@havshya"
 guest_address = "svjadhav7799@gmail.com"
-subject = "Regarding Success of your model "
-content = '''Hello, 
+subject = "MODEL HAS ACHIEVED PREDEFINED ACCURACY"
+content = 
+'''Hello, 
 				Developer this is an email regarding to your last commit. Your last commit was taken into consideration and based on that the trained model has given best accuracy .
 				Congratulations on your success.
 			THANK YOU ...'''
