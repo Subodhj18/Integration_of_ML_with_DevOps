@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 host_address = "svjadhav1818@gmail.com"
 host_pass = "96618291#@havshya"
 guest_address = "svjadhav7799@gmail.com"
-subject = "Regarding failure of rebuild.py"
+subject = "REGARDING FAILURE OF tweak.py"
 content = """\<html>
   <head></head>
   <body>
