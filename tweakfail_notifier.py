@@ -8,7 +8,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 host_address = "svjadhav1818@gmail.com"
-host_pass = "96618291#@havshya"
+host_pass = "****"
 guest_address = "svjadhav7799@gmail.com"
 subject = "REGARDING FAILURE OF tweak.py"
 content = """\<html>
