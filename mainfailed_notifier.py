@@ -30,7 +30,7 @@ message = MIMEMultipart()
 message['From'] = host_address
 message['To'] = guest_address
 message['Subject'] = subject
-message.attach(MIMEText(content, 'plain'))
+message.attach(MIMEText(content, 'html'))
 session = smtplib.SMTP('smtp.gmail.com', 587)
 session.starttls()
 session.login(host_address, host_pass)
